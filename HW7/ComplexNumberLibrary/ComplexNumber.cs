@@ -29,6 +29,26 @@
 			return new ComplexNumber((numerator.Real / denominator), (numerator.Imaginary / denominator));
 		}
 
+		public static bool operator != (ComplexNumber left, ComplexNumber right)
+		{
+			return left.Real != right.Real | left.Imaginary != right.Imaginary;
+		}
+
+		public static bool operator == (ComplexNumber left, ComplexNumber right)
+		{
+			return left.Real == right.Real && left.Imaginary == right.Imaginary;
+		}
+
+		public override int GetHashCode()
+		{
+			return base.GetHashCode();
+		}
+
+		public override bool Equals(object? obj)
+		{
+			return base.Equals(obj);
+		}
+
 		public new string ToString()
 		{
 			return $"{Real} + {Imaginary}i";
