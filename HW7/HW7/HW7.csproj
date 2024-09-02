@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ComplexNumberLibrary\ComplexNumberLibrary.csproj" />
+    <ProjectReference Include="..\GeometricShapesLibrary\GeometricShapesLibrary.csproj" />
   </ItemGroup>
 
 </Project>
